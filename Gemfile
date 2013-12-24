@@ -29,7 +29,10 @@ gem 'jbuilder', '~> 1.2'
 
 
 # styling
-gem ''
+gem 'zurb-foundation'
+gem 'foundation_rails_helper'
+
+gem 'devise'
 
 
 group :doc do
