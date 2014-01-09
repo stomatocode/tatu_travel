@@ -1,2 +1,5 @@
 <h1>Welcome to Tatu Travel</h1>
 <h3>A way to get where you want to be in Brasil!</h3>
+<% if current_user %>
+  <%= link_to 'Logout',  destroy_user_session_path, method: :delete %>
+<% end %>

@@ -32,7 +32,13 @@ gem 'jbuilder', '~> 1.2'
 gem 'zurb-foundation'
 gem 'foundation_rails_helper'
 
+
+# tools
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+
+gem 'dotenv-rails'
 
 
 group :doc do
