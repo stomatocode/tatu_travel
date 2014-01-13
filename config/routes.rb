@@ -1,10 +1,9 @@
 Tatu::Application.routes.draw do
 
-  get "omniauth_callbacks_controller/facebook"
+  # get "omniauth_callbacks_controller/facebook"
   root "welcome#index"
 
-
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
   # get "welcome/index"
 
   # The priority is based upon order of creation: first created -> highest priority.
