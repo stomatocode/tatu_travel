@@ -1,5 +1,6 @@
 Tatu::Application.routes.draw do
 
+  get "omniauth_callbacks_controller/facebook"
   root "welcome#index"
 
 
