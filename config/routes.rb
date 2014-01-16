@@ -4,6 +4,8 @@ Tatu::Application.routes.draw do
   root "welcome#index"
 
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
+    resources :users, only: [:show]
+
   # get "welcome/index"
 
   # The priority is based upon order of creation: first created -> highest priority.
